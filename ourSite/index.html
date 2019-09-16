@@ -23,15 +23,41 @@
   </head>
   <body>
 
-  <div class="nav-scroller py-1 mb-2">
-    <nav class="nav d-flex justify-content-between">
-      <a class="p-2" href="robot.html">Technology</a>
-      <a class="p-2" href="#">Science.</a>
-      <a class="p-2" href="#">Sponsors</a>
-      <a class="p-2" href="#">Contacts</a>
-      <a class="p-2" href="#">ASDASF</a>
-    </nav>
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <a class="navbar-brand" href="#">TechScienceFest</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="navbar navbar-dark bg-dark" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item active">
+        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#login">Log In</a>
+      </li>
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          ...
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <a class="dropdown-item" href="#techinv">Technology</a>
+          <a class="dropdown-item" href="#Culture">Culture</a>
+          <div class="dropdown-divider"></div>
+          <a class="dropdown-item" href="#">Ecology</a>
+        </div>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">//</a>
+      </li>
+    </ul>
+    <form class="form-inline my-2 my-lg-0">
+      <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+      <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+    </form>
   </div>
+</nav>
 
     <div class="jumbotron p-4 p-md-5 text-white rounded bg-dark">
     <div class="col-md-6 px-0">
@@ -40,14 +66,14 @@
     </div>
   </div>
 <div align="center">
-  <div class="col-md-4">
+  <div class="col-md-4"><a name="techinv"></a>
           <div class="card mb-4 shadow-sm">
             <img src="rbttch.jpg" > 
             <div class="card-body">
               <p class="card-text">Изобретения в области технологии (роботехника, программирование,  кодирование,  лего-конструирование,  мобильные приложения и т.д.)</p>
               <div class="d-flex justify-content-between align-items-center">
                 <div class="btn-group">
-                  <button type="button" class="btn btn-sm btn-outline-secondary">Подробнее</button>
+                  <button type="button" onclick="window.location.href='robot.html';" class="btn btn-sm btn-outline-secondary">Подробнее</button>
                 </div>
               </div>
             </div>
@@ -61,11 +87,11 @@
 	 <div class="col-md-4">
           <div class="card mb-4 shadow-sm">
             <img src="txtl.jpg"> 
-            <div class="card-body">
+            <div class="card-body"><a name="Culture"></a>
               <p class="card-text">Изобретения в области культуры и медиа  (народные промыслы и рукоделие (smart textiles), видео и звуко-записывание (video and sound production), блогерство и т.д. )</p>
               <div class="d-flex justify-content-between align-items-center">
                 <div class="btn-group">
-                  <button type="button" class="btn btn-sm btn-outline-secondary">Подробнее</button>
+                  <button type="button" onclick="window.location.href='media.html';" class="btn btn-sm btn-outline-secondary">Подробнее</button>
                 </div>
               </div>
             </div>
@@ -83,7 +109,7 @@
               <p class="card-text">Изобретения в области экологии (научные разработки  в  решении проблем окружающей среды, изобретения в области переработки, вторая жизнь вторичного сырья, сельского хозяйстваб экопродукция, устройства по очистке воздуха, воды и  т.д.)</p>
               <div class="d-flex justify-content-between align-items-center">
                 <div class="btn-group">
-                  <button type="button" class="btn btn-sm btn-outline-secondary">Подробнее</button>
+                  <button type="button" onclick="window.location.href='ecolog.html';" class="btn btn-sm btn-outline-secondary">Подробнее</button>
                 </div>
               </div>
             </div>
@@ -101,7 +127,7 @@
               <p class="card-text">Изобретения в области бизнеса (идеи для малого бизнеса, бизнес стартапы, и  т.д.)</p>
               <div class="d-flex justify-content-between align-items-center">
                 <div class="btn-group">
-                  <button type="button" class="btn btn-sm btn-outline-secondary">Подробнее</button>
+                  <button type="button" onclick="window.location.href='business.html';" class="btn btn-sm btn-outline-secondary">Подробнее</button>
                 </div>
               </div>
             </div>
@@ -123,7 +149,7 @@
 <font color="white" size="24">Заполните форму для регистрации</font>
 <div class="container">
     <form>
-  <div class="form-group">
+  <div class="form-group"><a name="login">LogIn</a>
     <label for="exampleInputEmail1">Email address</label>
     <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
     <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
